@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sungen generated files
+specs/.auth/
+test-results/
+playwright-report/
+.playwright-mcp/
+.sungen/figma-cache/
+.sungen/feedback/
