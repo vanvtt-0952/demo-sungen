@@ -1,0 +1,53 @@
+# contact-points Screen Selectors
+# Keys must match generateKey(gherkinLabel): lowercase, spaces, Unicode NFC — not hyphens
+
+contact-points:
+  type: 'page'
+  value: '/vi/contact-points'
+
+auth:
+  type: 'page'
+  value: '/vi/login'
+
+# @needs-live-verify source=spec
+page title:
+  type: 'role'
+  value: 'heading'
+  name: 'Danh sách điểm liên hệ'
+
+# @needs-live-verify source=spec
+contact points table:
+  type: 'role'
+  value: 'table'
+  name: ''
+  nth: 0
+  columns:
+    liên lạc:
+      index: 2
+      header: 'Liên lạc'
+    vị trí:
+      index: 0
+      header: 'Vị trí'
+    vấn đề:
+      index: 1
+      header: 'Vấn đề'
+    danang office:
+      index: 2
+      header: 'DaNang Office'
+    hcmc office:
+      index: 3
+      header: 'HCMC Office'
+    hanoi office:
+      index: 4
+      header: 'Hanoi Office'
+
+# @needs-live-verify source=spec
+multi-name contact cell:
+  type: 'locator'
+  value: 'td:has(br)'
+
+no contact cell:
+  type: 'text'
+  value: '{{no_contact_placeholder}}'
+  exact: true
+  nth: 0

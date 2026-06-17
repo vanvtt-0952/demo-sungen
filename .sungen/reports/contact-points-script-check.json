@@ -1,0 +1,17 @@
+{
+  "screen": "contact-points",
+  "specPath": "C:\\Users\\vu.thi.tran.van\\Desktop\\Trainings\\sungen-17Jun\\specs\\generated\\contact-points\\contact-points.spec.ts",
+  "automatedScenarios": 4,
+  "manualScenarios": 2,
+  "specTestBlocks": 4,
+  "countMatch": true,
+  "missingInSpec": [],
+  "extraInSpec": [],
+  "drift": "in-sync",
+  "driftHunks": [],
+  "assertionlessTests": [],
+  "hollowSteps": [],
+  "bypass": false,
+  "status": "OK",
+  "findings": []
+}

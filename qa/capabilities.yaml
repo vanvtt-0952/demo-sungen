@@ -1,0 +1,7 @@
+# Sungen capability profile — which runtime/drivers this project uses.
+# platform: the runtime adapter — web → Playwright, mobile → Appium.
+# enabled: drivers turned on (add more via `sungen capability add <driver>`).
+
+platform: web
+enabled:
+  - web

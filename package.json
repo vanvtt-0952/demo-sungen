@@ -1,0 +1,25 @@
+{
+  "name": "sungen-17jun",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test specs/generated/",
+    "test:headed": "playwright test specs/generated/ --headed",
+    "test:debug": "playwright test specs/generated/ --debug",
+    "test:ui": "playwright test specs/generated/ --ui",
+    "report": "playwright show-report",
+    "generate": "sungen generate --all",
+    "install:browsers": "npx playwright install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "private": true,
+  "devDependencies": {
+    "@playwright/test": "^1.61.0",
+    "@types/node": "^25.9.3",
+    "yaml": "^2.9.0"
+  }
+}
