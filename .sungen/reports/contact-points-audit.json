@@ -1,0 +1,155 @@
+{
+  "screen": "contact-points",
+  "scenarioCount": 6,
+  "gate": {
+    "pageType": null,
+    "themesTotal": 0,
+    "themesCovered": 0,
+    "coverageRatio": 1,
+    "gaps": [],
+    "universalGaps": [
+      "accessibility"
+    ]
+  },
+  "depth": {
+    "total": 4,
+    "shallowTotal": 2,
+    "shallowRatio": 0.5,
+    "businessCriticalTotal": 0,
+    "businessCriticalShallow": 0,
+    "bcDepthRatio": 1,
+    "shallowBusinessCritical": [],
+    "focus": "functional",
+    "threshold": 0.7,
+    "verdict": "pass"
+  },
+  "claim": {
+    "total": 4,
+    "withClaims": 0,
+    "proven": 0,
+    "unproven": [],
+    "ratio": 1,
+    "focus": "functional",
+    "threshold": 0.7,
+    "verdict": "pass"
+  },
+  "taxonomy": {
+    "total": 6,
+    "checked": 0,
+    "mislabeled": []
+  },
+  "balance": {
+    "byBucket": {
+      "business-core": 0,
+      "presentation": 2,
+      "validation-security": 0,
+      "behavior": 0,
+      "navigation": 0,
+      "other": 4
+    },
+    "byCategory": {
+      "UI": 2,
+      "AUTH": 1,
+      "DATA": 3
+    },
+    "coreCount": 0,
+    "secondaryCount": 2,
+    "imbalanced": false,
+    "note": "Balanced."
+  },
+  "duplicates": {
+    "clusters": [],
+    "exactDuplicateCount": 0,
+    "sameShapeCount": 0
+  },
+  "trace": {
+    "total": 6,
+    "withVpCode": 6,
+    "mappedToOverview": 6,
+    "withVpCodeRatio": 1,
+    "mappedRatio": 1,
+    "note": "Traceable."
+  },
+  "spec": {
+    "hasSpec": true,
+    "frTotal": 0,
+    "frCovered": 0,
+    "uncoveredMust": [],
+    "triggerGaps": [],
+    "verdict": "pass"
+  },
+  "taxonomyMismatch": false,
+  "downstream": {
+    "downstreamRoutes": [
+      "/contact-points",
+      "/Navbar"
+    ],
+    "underCovered": []
+  },
+  "manualOracle": {
+    "manualTotal": 2,
+    "insufficient": []
+  },
+  "ledger": {
+    "hasViewpoint": true,
+    "total": 12,
+    "covered": 8,
+    "ratio": 0.6666666666666666,
+    "missing": [
+      {
+        "text": "Skip Logout: Logout thuộc Global Header — bỏ qua, không gen test case tại đây."
+      },
+      {
+        "id": "VP-UI-1",
+        "text": "VP-UI-1 — High — Bảng hiển thị đúng cấu trúc (tiêu đề cột, số cột, có dữ liệu)"
+      },
+      {
+        "id": "VP-VAL-1",
+        "text": "VP-VAL-1 — Skip — Màn hình chỉ hiển thị dữ liệu, không có chức năng nhập liệu hay kiểm tra"
+      },
+      {
+        "id": "VP-LOGIC-1",
+        "text": "VP-LOGIC-1 — Skip — Không có business logic phía client"
+      }
+    ]
+  },
+  "calibration": {
+    "axes": {
+      "coverage": 1,
+      "businessDepth": 1,
+      "claimProof": 1,
+      "specFR": 1,
+      "atomicLedger": 0.67,
+      "manualOracle": 1,
+      "taxonomy": 1
+    },
+    "weakest": {
+      "axis": "atomicLedger",
+      "value": 0.67
+    },
+    "inflated": false
+  },
+  "score": {
+    "overall": 8.5,
+    "coverage": 1,
+    "businessDepth": 1,
+    "balance": 0,
+    "traceability": 1,
+    "formula": "overall = (0.4*coverage + 0.3*businessDepth + 0.15*balance + 0.15*traceability) * 10"
+  },
+  "gateStatus": "PASS",
+  "findings": [
+    "UNIVERSAL: missing theme(s): accessibility (low priority reminder).",
+    "VIEWPOINT-ITEM-MISSING: 4/12 atomic viewpoint items have no covering scenario (67% covered) — e.g. \"Skip Logout: Logout thuộc Global Header — bỏ qua, không gen test case tại đây.\", VP-UI-1, VP-VAL-1, VP-LOGIC-1. Cover each item or mark it deferred/spec-gap."
+  ],
+  "intent": {
+    "focus": "functional",
+    "riskTier": "normal",
+    "tierScope": "full",
+    "source": "default"
+  },
+  "provenance": {
+    "sungenVersion": "3.0.1",
+    "catalogHash": "58e08cc3f102"
+  }
+}
