@@ -1,4 +1,19 @@
 import { defineConfig, devices } from '@playwright/test';
+import * as fs from 'fs';
+import * as path from 'path';
+
+/** Parse key=value lines from .env.qa for HTTP Basic Auth credentials */
+function loadEnvQa(): Record<string, string> {
+  const envPath = path.join(process.cwd(), '.env.qa');
+  if (!fs.existsSync(envPath)) return {};
+  const vars: Record<string, string> = {};
+  for (const line of fs.readFileSync(envPath, 'utf8').split(/\r?\n/)) {
+    const m = line.match(/^([A-Z0-9_]+)=(.+)$/);
+    if (m) vars[m[1]] = m[2].trim();
+  }
+  return vars;
+}
+const envQa = loadEnvQa();
 
 /**
  * Resolve the JSON reporter output path.
@@ -60,6 +75,12 @@ export default defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
     baseURL: 'https://ask.awesome-services.net/',
+
+    /* HTTP Basic Auth for CDN-level access (credentials from .env.qa) */
+    httpCredentials: {
+      username: process.env.BASIC_AUTH_USER || envQa.BASIC_AUTH_USER || '',
+      password: process.env.BASIC_AUTH_PASS || envQa.BASIC_AUTH_PASS || '',
+    },
 
     /* Per-action timeout (click, fill, etc.) */
     actionTimeout: 10_000,

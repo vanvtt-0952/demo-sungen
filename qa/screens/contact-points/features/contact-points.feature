@@ -30,12 +30,12 @@ Feature: contact-points Screen
     # NOTE: 2-level colspan ("Liên lạc" spanning DaNang/HCMC/Hanoi) is DSL limitation — verify via DevTools (th[colspan=3])
     When User wait for [Contact Points Table] table is visible
     Then User see [Contact Points Table] table
-    And User see [Contact Group Header] column in [Contact Points Table] table
-    And User see [Department Column] column in [Contact Points Table] table
-    And User see [Topic Column] column in [Contact Points Table] table
-    And User see [DaNang Column] column in [Contact Points Table] table
-    And User see [HCMC Column] column in [Contact Points Table] table
-    And User see [Hanoi Column] column in [Contact Points Table] table
+    And User see [Liên lạc] column in [Contact Points Table] table
+    And User see [Vị trí] column in [Contact Points Table] table
+    And User see [Vấn đề] column in [Contact Points Table] table
+    And User see [DaNang Office] column in [Contact Points Table] table
+    And User see [HCMC Office] column in [Contact Points Table] table
+    And User see [Hanoi Office] column in [Contact Points Table] table
 
   # --- Section: Auth — VP-AUTH (Tier 1) ---
 

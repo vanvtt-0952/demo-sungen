@@ -1,0 +1,249 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\vu.thi.tran.van\\Desktop\\Trainings\\sungen-17Jun\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "specs/generated/contact-points/contact-points.spec.ts"
+    ],
+    "configFile": "C:\\Users\\vu.thi.tran.van\\Desktop\\Trainings\\sungen-17Jun\\playwright.config.ts",
+    "rootDir": "C:/Users/vu.thi.tran.van/Desktop/Trainings/sungen-17Jun/specs/generated",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/vu.thi.tran.van/Desktop/Trainings/sungen-17Jun/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/vu.thi.tran.van/Desktop/Trainings/sungen-17Jun/specs/generated",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 15000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "specs/generated/contact-points/contact-points-test-result.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.0",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "contact-points\\contact-points.spec.ts",
+      "file": "contact-points/contact-points.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "contact-points Screen",
+          "file": "contact-points/contact-points.spec.ts",
+          "line": 19,
+          "column": 6,
+          "specs": [
+            {
+              "title": "VP-AUTH-001 Session required — unauthenticated direct access is redirected",
+              "ok": true,
+              "tags": [
+                "high"
+              ],
+              "tests": [
+                {
+                  "timeout": 15000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1465,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-17T04:19:03.694Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "60ce5e2300076694f645-8dc55ae678cb65b0cead",
+              "file": "contact-points/contact-points.spec.ts",
+              "line": 75,
+              "column": 7
+            }
+          ],
+          "suites": [
+            {
+              "title": "user",
+              "file": "contact-points/contact-points.spec.ts",
+              "line": 27,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "VP-UI-001 Bảng hiển thị đúng với tiêu đề trang khi tải",
+                  "ok": true,
+                  "tags": [
+                    "high"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 15000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1686,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-06-17T04:19:01.384Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "60ce5e2300076694f645-6b1f2fc980dd417f126b",
+                  "file": "contact-points/contact-points.spec.ts",
+                  "line": 30,
+                  "column": 9
+                },
+                {
+                  "title": "VP-UI-002 Bảng hiển thị đủ 5 cột khi tải",
+                  "ok": true,
+                  "tags": [
+                    "high"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 15000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 2089,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-06-17T04:19:01.396Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "60ce5e2300076694f645-f50b752f78f908a16a4f",
+                  "file": "contact-points/contact-points.spec.ts",
+                  "line": 42,
+                  "column": 9
+                },
+                {
+                  "title": "VP-DATA-003 Ô dash placeholder tồn tại trong bảng liên hệ",
+                  "ok": true,
+                  "tags": [
+                    "normal"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 15000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1582,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-06-17T04:19:03.264Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "60ce5e2300076694f645-9340a369855e099d9aed",
+                  "file": "contact-points/contact-points.spec.ts",
+                  "line": 63,
+                  "column": 9
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-06-17T04:19:00.883Z",
+    "duration": 4419.628,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
