@@ -1,0 +1,28 @@
+{
+  "screen": "contact-points",
+  "specPath": null,
+  "automatedScenarios": 4,
+  "manualScenarios": 2,
+  "specTestBlocks": 0,
+  "countMatch": false,
+  "missingInSpec": [
+    "VP-UI-001 Bảng hiển thị đúng với tiêu đề trang khi tải",
+    "VP-UI-002 Bảng hiển thị đủ 5 cột khi tải",
+    "VP-AUTH-001 Session required — direct access redirects to login page",
+    "VP-DATA-003 Ô không có contact tồn tại trong bảng"
+  ],
+  "extraInSpec": [],
+  "drift": "no-spec",
+  "driftHunks": [],
+  "assertionlessTests": [],
+  "hollowSteps": [],
+  "bypass": false,
+  "status": "FAIL",
+  "findings": [
+    "No generated spec found under specs/generated/ — run `sungen generate` / `/sungen:run-test` first.",
+    "MISSING in spec: scenario \"VP-UI-001 Bảng hiển thị đúng với tiêu đề trang khi tải\" has no test() block (stale spec — regenerate).",
+    "MISSING in spec: scenario \"VP-UI-002 Bảng hiển thị đủ 5 cột khi tải\" has no test() block (stale spec — regenerate).",
+    "MISSING in spec: scenario \"VP-AUTH-001 Session required — direct access redirects to login page\" has no test() block (stale spec — regenerate).",
+    "MISSING in spec: scenario \"VP-DATA-003 Ô không có contact tồn tại trong bảng\" has no test() block (stale spec — regenerate)."
+  ]
+}

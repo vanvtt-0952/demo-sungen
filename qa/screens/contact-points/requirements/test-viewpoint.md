@@ -31,9 +31,9 @@ Only applicable patterns are listed. Patterns not listed are not applicable to t
 
 | VP | Priority | Reason |
 |---|----------|--------|
-| VP-UI | High | Bảng hiển thị đúng cấu trúc (tiêu đề cột, số cột, có dữ liệu) |
-| VP-AUTH | High | Screen yêu cầu đăng nhập; unauthenticated user bị redirect |
-| VP-DATA | Medium | Ô nhiều tên hiển thị đầy đủ, không truncate — manual verify |
-| VP-VAL | Skip | Màn hình chỉ hiển thị dữ liệu, không có chức năng nhập liệu hay kiểm tra |
-| VP-LOGIC | Skip | Không có business logic phía client |
-| VP-SEC | Low | Chỉ cần verify auth redirect; không có action nào gây rủi ro |
+| VP-UI-1 | High | Bảng hiển thị đúng cấu trúc (tiêu đề cột, số cột, có dữ liệu) |
+| VP-AUTH-1 | High | Screen yêu cầu đăng nhập; unauthenticated user bị redirect |
+| VP-DATA-1 | Medium | Ô nhiều tên hiển thị đầy đủ, không truncate — manual verify |
+| VP-VAL-1 | Skip | Màn hình chỉ hiển thị dữ liệu, không có chức năng nhập liệu hay kiểm tra |
+| VP-LOGIC-1 | Skip | Không có business logic phía client |
+| VP-SEC-1 | Low | Chỉ cần verify auth redirect; không có action nào gây rủi ro |

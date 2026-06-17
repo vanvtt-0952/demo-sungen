@@ -1,3 +1,5 @@
 # contact-points Screen Test Data
-# Fill via AI or manually
-# Reference in features using {{variable}} syntax
+
+# Page metadata
+page_title: "Danh sách điểm liên hệ"
+no_contact_placeholder: "–"
