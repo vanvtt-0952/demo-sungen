@@ -1,0 +1,6 @@
+# contact-points Screen Selectors
+# Fill via AI or manually
+
+contact-points:
+  type: 'page'
+  value: 'C:/Program Files/Git/vi/contact-points'
