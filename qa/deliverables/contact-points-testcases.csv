@@ -1,0 +1,34 @@
+﻿,,,CONTACT-POINTS TESTCASE,,,No: BM-2-901-13,,,,,,,,,
+,,,,,,Version: 3.0.1,,,,,,,,,
+,,,,,,Issue Date: 17/06/2026,,,,,,,,,
+"SUN ASTERISK VIETNAM CO., LTD",,,,,,ISO/IEC 27001:2022 & ISO 9001:2015,,,,,,,,,
+,,,,,,,,,,,,,,,
+,,Total TCs,Passed,Failed,Pending,N/A,Remaining,,,,,,,,
+,,6,4,0,2,0,2,,,,,,,,
+,,,67%,0%,33%,0%,33%,,,,,,,,
+,,,,,,,,,,,,,,,
+Spec/Design link:,qa\screens\contact-points\requirements\spec.md,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+*: Mandatory,,,,,,,,,,,,,,,
+TC ID*,Screen/Function,Big item,Medium item,Test Object,Pre-condition,Test Data,Steps*,Expected results*,Priority,Testcase type,Test Result*,Executed Date*,Test Executor*,Test Environment,"Note
+(Test evidence, DefectID, Actual result)"
+,GUI,,,,,,,,,,,,,,
+CONTACT-POINTS-UI-001,,,,Bảng hiển thị đúng với tiêu đề trang khi tải,Logged in as user,• page_title: Danh sách điểm liên hệ,"1. User is on [contact-points] page
+2. Wait for [Contact Points Table] table is visible","1. See [Page Title] header with {{page_title}}
+2. See [Contact Points Table] table",High,Auto,Passed,17/06/2026,vanvtt-0952,https://ask.awesome-services.net/vi/contact-points (chromium),
+CONTACT-POINTS-UI-002,,,,Bảng hiển thị đủ 5 cột khi tải,Logged in as user,,"1. User is on [contact-points] page
+2. Wait for [Contact Points Table] table is visible","1. See [Contact Points Table] table
+2. See [Liên lạc] column in [Contact Points Table] table
+3. See [Vị trí] column in [Contact Points Table] table
+4. See [Vấn đề] column in [Contact Points Table] table
+5. See [DaNang Office] column in [Contact Points Table] table
+6. See [HCMC Office] column in [Contact Points Table] table
+7. See [Hanoi Office] column in [Contact Points Table] table",High,Auto,Passed,17/06/2026,vanvtt-0952,https://ask.awesome-services.net/vi/contact-points (chromium),
+,Function,,,,,,,,,,,,,,
+CONTACT-POINTS-AUTH-001,,,,Session required — unauthenticated direct access is redirected,Not authenticated,,User is on [contact-points] page,"1. See [Auth] page
+2. See [Contact Points Table] table is hidden",High,Auto,Passed,17/06/2026,vanvtt-0952,https://ask.awesome-services.net/vi/contact-points (chromium),
+CONTACT-POINTS-DATA-001,,,,Ô chứa nhiều tên hiển thị đầy đủ không truncate,Logged in as user,,User is on [contact-points] page,"1. See [Contact Points Table] table
+2. See [Multi-name Contact Cell] cell",High,Manual,Pending,,,,
+CONTACT-POINTS-DATA-003,,,,Ô dash placeholder tồn tại trong bảng liên hệ,Logged in as user,• no_contact_placeholder: -,User is on [contact-points] page,"1. See [Contact Points Table] table
+2. See [No Contact Cell] cell with {{no_contact_placeholder}}",Normal,Auto,Passed,17/06/2026,vanvtt-0952,https://ask.awesome-services.net/vi/contact-points (chromium),
+CONTACT-POINTS-DATA-002,,,,Bảng rỗng hiển thị đúng mà không lỗi khi DB không trả dữ liệu,Logged in as user,,User is on [contact-points] page,See [Contact Points Table] table is empty,Normal,Manual,Pending,,,,
